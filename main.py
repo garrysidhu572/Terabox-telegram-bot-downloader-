@@ -41,7 +41,7 @@ async def on_startup(dp):
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.answer("Hello! Send me video url to download video.")
+    await message.answer("Hello! Send me video url to download video.\n\n JOIN OUR CHANNELFOR UPDATES @TERABOXSUPPORT01 . ")
 
 @dp.message_handler(commands=['ping'])
 async def ping(message: types.Message):
@@ -89,7 +89,7 @@ async def echo(message: types.Message):
                     os.remove(file_path)
                     keyboard = types.InlineKeyboardMarkup()
                     url_button = types.InlineKeyboardButton(text="Author", url=OWNER)
-                    url_button2 = types.InlineKeyboardButton(text="Repo", url="https://github.com/anbuinfosec/social-bot-v2")
+                    url_button2 = types.InlineKeyboardButton(text="Channel", url="https://t.me/teraboxsupport01")
                     keyboard.add(url_button, url_button2)
                     await message.reply("Thanks for using our bot.", reply_markup=keyboard)
             else:
